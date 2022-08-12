@@ -7,8 +7,8 @@ import { NotesModel } from '../models/notes-model';
 })
 export class NotesApiService {
 
-  baseUrlDev = "http://localhost:3000"
-  baseUrlProd = "mongodb+srv://admin:admin@cluster0.wyoisx5.mongodb.net/?retryWrites=true&w=majority"
+  //baseUrlDev = "http://localhost:3000"
+  baseUrlProd = "https://notes-api-359211.el.r.appspot.com"
   baseUrl = this.baseUrlDev;
   constructor(private http: HttpClient) { }
 
