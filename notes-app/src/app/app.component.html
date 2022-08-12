@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <mat-selection-list #menu [multiple]="false">
+            <mat-list-option *ngFor="let menuOption of menuOptions" [value]="menuOption">
+              <a [routerLink]="menuOption.path">{{menuOption.title}}</a>
+            </mat-list-option>
+          </mat-selection-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <!-- Router Outlet -->
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
